@@ -10,6 +10,7 @@ int print_normal(const char *text, int *count)
 {
 	write(1, text, 1);
 	(*count)++;
+	return (0);
 }
 
 /**
@@ -27,6 +28,7 @@ int print_string(const char *str, int *count)
 
 	write(1, str, str_len);
 	(*count) += str_len;
+	return (0);
 }
 
 /**
@@ -36,12 +38,11 @@ int print_string(const char *str, int *count)
  */
 int _printf(const char *format, ...)
 {
+	int print_character = 0;
+	va_list list_of_args;
+
 	if (format == NULL)
 		return (-1);
-
-	int print_character = 0;
-
-	va_list list_of_args;
 
 	va_start(list_of_args, format);
 
