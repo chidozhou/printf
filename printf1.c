@@ -69,7 +69,7 @@ const char *handle_conversion(const char *format, int *count, va_list args)
  * 
  * _printf1 - our custom printf function
  * @format: The format string
- * Return: Number of characters printed
+ * Return: Number of the characters printed
  */
 int _printf1(const char *format, ...)
 {
