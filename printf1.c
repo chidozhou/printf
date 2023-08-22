@@ -66,7 +66,8 @@ const char *handle_conversion(const char *format, int *count, va_list args)
 }
 
 /**
- * _printf1 - Custom printf function
+ * 
+ * _printf1 - our custom printf function
  * @format: The format string
  * Return: Number of characters printed
  */
